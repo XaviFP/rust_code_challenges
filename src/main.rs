@@ -53,3 +53,12 @@ fn odd_length_list() {
 
     assert_eq!(actual, expected)
 }
+
+#[test]
+fn even_length_list() {
+    let input: Vec<f32> = vec![3.0, 1.0, 8.0, 6.0];
+    let expected: Option<f32>  = Some(4.5);
+    let actual = median(input);
+
+    assert_eq!(actual, expected)
+}
