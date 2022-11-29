@@ -35,3 +35,12 @@ fn median(mut numbers: Vec<f32>) -> Option<f32> {
 
     Some(med)
 }
+
+#[test]
+fn empty_list() {
+    let input: Vec<f32> = vec![];
+    let expected: Option<f32>  = None;
+    let actual = median(input);
+
+    assert_eq!(actual, expected)
+}
